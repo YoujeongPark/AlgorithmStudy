@@ -13,10 +13,7 @@ class Solution {
 
     }
 
-
     public boolean checkNumber(String number){
-
-
         try{
 
             if(number.length() == 4 || number.length() == 6){
