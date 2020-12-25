@@ -6,7 +6,6 @@ public class Solution {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-
         for(int l =0 ; l<b ; l++ ){
 
             for(int m =0; m<a ; m++ ){
