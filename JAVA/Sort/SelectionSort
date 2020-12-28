@@ -1,0 +1,30 @@
+import java.util.Arrays;
+
+public class SelectionSort{
+    public static void main(String[] args) {
+        int [] array ={4,3,6,8,23,2,35,7,248,2,3,45};
+        int size = array.length;
+        array = SelectionSort(array,size);
+        System.out.println(Arrays.toString(array));
+
+    }
+
+    public static int[] SelectionSort(int arr[], int MAX) {
+
+        int i, j;
+        int min, temp;
+
+        for(i=0; i<MAX-1; i++) {
+            min=i;
+            for(j=i+1; j<MAX;j++) {
+                if(arr[j]<arr[min]) min=j;
+            }
+            temp = arr[i];
+            arr[i] = arr[min];
+            arr[min]=temp;
+        }
+
+        return arr;
+    }
+}
+
